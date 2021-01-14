@@ -1,0 +1,430 @@
+@charset "UTF-8";
+@media screen and (max-width: 390px) {
+  h1 {
+    font-size: 2.5vmin;
+    color: #f3408b;
+  }
+  .header {
+    height: 290px;
+    /*height: 100%;*/
+    width: 100%;
+  }
+  .header:after {
+    /*		background: url('../img/header2.jpg') no-repeat center top;
+    */
+  }
+  /* ----------Стиль БУРГЕР меню----------- */
+  .container {
+    width: 100vw;
+  }
+  .logotipe {
+    width: 60px;
+    height: 60px;
+    margin-right: 2.1vh;
+    margin-top: 5.1vh;
+  }
+  .logo {
+    margin-top: 4.1vh;
+    width: 0px;
+  }
+  .site-slogan {
+    margin-top: 9vh;
+    margin-right: 0;
+  }
+  #title {
+    margin-top: 1vh;
+    margin-left: 3vw;
+  }
+  .site-slogan h1 {
+    font-size: 3.5vmax;
+    line-height: 5vmax;
+    text-decoration: none;
+  }
+  .menu {
+    width: 100%;
+    border-radius: 0px;
+    height: 7vh;
+    margin-top: 0;
+    font-size: 2.2vmax;
+    text-align: center;
+  }
+  .menu__icon {
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+  .menu__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 43vh;
+    margin-left: 10%;
+    width: 80%;
+    position: fixed;
+    display: none;
+    padding-left: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 8vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+  }
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+  }
+  /* ----End--Стиль БУРГЕР меню----------- */
+  .menu-item {
+    margin: 0 auto;
+  }
+  .btn {
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .fixed-box {
+    margin-top: 0px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  video {
+    width: 80%;
+    height: 100%;
+  }
+  .video {
+    text-align: center;
+    width: 90%;
+    /*	margin-right: 5%;*/
+    margin: 0px;
+  }
+  .post_video {
+    margin-right: 5%;
+    height: 26.63vh;
+    margin-top: 0vh;
+  }
+  .top {
+    margin-top: 2vh;
+    font-size: 1.5vmax;
+    padding-right: 2vw;
+  }
+  .sticky {
+    background: black;
+    color: white;
+    top: 5vmax;
+  }
+  .disclamer__top {
+    display: none;
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+    clear: both;
+  }
+  .display_scroll {
+    display: none;
+  }
+  #navId {
+    margin-top: 0;
+  }
+  #history-title {
+    margin-top: 7vh;
+    margin-bottom: 10px;
+  }
+  .about-museum {
+    display: none;
+  }
+  .about-museum-media {
+    min-width: 100%;
+    max-width: 390px;
+    height: 100%;
+    max-height: 300px;
+    background-size: 100% 100%;
+    position: relative;
+    font-size: 2vmax;
+    margin-top: 10px;
+    background: url("../img/bg2-300.png") no-repeat center right;
+  }
+  .about-museum-media p {
+    font-size: 2vmax;
+  }
+  /* --------- about museum -------------------*/
+  .etc_btn {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  /* ----- стиль модального окна --------- */
+  .modalDialog {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    /* right: 0;
+            bottom: 0;
+            left: 0;*/
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    display: block;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 300px;
+    position: absolute;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -o-linear-gradient(#fff, #999);
+  }
+  .modalDialog > div p {
+    text-align: justify;
+    color: #222121;
+  }
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .close:hover {
+    background: #00d9ff;
+  }
+  /* --END--функционал закрытия окна. Формируем внешний вид кнопки ------ */
+  /* ------ Прокручивающийся DIV --------------------------------- */
+  /* ---- https://pcvector.net/scripts/scrollup/72-tinyscroller-prokruchivayuschiysya-div.html --- */
+  #wrapper {
+    width: 90%;
+    height: 300px;
+    padding-top: 10px;
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 5px;
+    background-color: rgba(2, 1, 14, 0.1);
+  }
+  #scroll {
+    width: 330px;
+    height: 420px;
+  }
+  #scrollcontent {
+    width: 300px;
+    line-height: 1;
+  }
+  #scrollbar {
+    height: 330px;
+  }
+  .post_disclamer {
+    background: url("../img/bg1-300.png") no-repeat center left;
+    height: 300px;
+  }
+  /* --END---- Прокручивающийся DIV --------------------------------- */
+  /* -------- ICONS -блок -------------------- */
+  #collection {
+    margin-top: 4vh;
+  }
+  .icons {
+    padding-top: 10px;
+    height: 420px;
+    margin-top: 0vh;
+  }
+  .disclamer-row {
+    height: 300px;
+  }
+  .disclamer_item {
+    width: 30%;
+  }
+  .disclamer_item p {
+    font-size: 1.75vmax;
+    line-height: 2.5vmax;
+  }
+  .fa {
+    margin-bottom: 0.8vh;
+    margin-top: 0.8vh;
+  }
+  .disclamer_header {
+    margin: 0 auto;
+  }
+  #item4 {
+    margin-top: 30px;
+  }
+  #item6 {
+    margin-top: 30px;
+  }
+  /* ----END---- ICONS -блок -------------------- */
+  .flexslider {
+    margin: 0 0 30px;
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0 10px 30px -3px rgba(251, 249, 249, 0.8);
+            box-shadow: 0 10px 30px -3px rgba(251, 249, 249, 0.8);
+  }
+  .flexslider p {
+    font-size: 1.4vmax;
+    width: 85vw;
+    margin-right: 2vh;
+    margin-left: 2vh;
+  }
+  .block p {
+    margin-top: 1.2vh;
+    font-size: 1.8vmax;
+    line-height: 2.2vmax;
+  }
+  .slider {
+    margin-top: 3vh;
+  }
+  .flex-prev {
+    padding-top: 30px;
+  }
+  .flex-next {
+    margin-top: 80px;
+  }
+  /*------Блок с ценами на посещение -------------*/
+  #price {
+    margin-top: 0;
+  }
+  .tickets-excursions {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tickets-excursions h2 {
+    font-size: 18px;
+  }
+  .tickets {
+    width: 60%;
+    padding: 0px 0px 0 20px;
+    clear: both;
+    border-bottom: none;
+  }
+  .tickets p {
+    font-size: 2.2vmax;
+  }
+  .tickets span {
+    font-size: 1.4vmax;
+  }
+  .fa-2x {
+    font-size: 1.3em;
+  }
+  .fa-bullhorn {
+    font-size: 1.5em;
+  }
+  .excursion {
+    width: 60%;
+    padding: 0px 0px 0 20px;
+    display: inline-block;
+    border: none;
+  }
+  .excursion h3 {
+    margin-top: 0px;
+  }
+  .excursion p {
+    font-size: 2.2vmax;
+  }
+  .excursion span {
+    font-size: 1.4vmax;
+  }
+  .tickets-price {
+    display: inline-block;
+    width: 30%;
+    clear: both;
+    padding-left: 10px;
+    margin-top: 2vh;
+  }
+  .tickets-price p {
+    font-size: 2vmax;
+    padding-top: 0px;
+    margin: 13px;
+  }
+  /* ----- БЛОК с КОНТАКТАМИ ---------- */
+  #contacts {
+    margin-top: 5vh;
+  }
+  .contacts {
+    margin-top: 3vh;
+    -webkit-box-shadow: 0 10px 30px -3px rgba(251, 249, 249, 0.5);
+            box-shadow: 0 10px 30px -3px rgba(251, 249, 249, 0.5);
+  }
+  /*.contacts-block p {
+        font-size: 1.5vmax
+    }*/
+  .contacts-block {
+    width: 65%;
+    margin-left: 35px;
+    border-right: 1px solid #fff;
+  }
+  .social-block {
+    width: 40%;
+    margin-right: 0px;
+    margin-left: 30px;
+  }
+  /* ---END ------ БЛОК с КОНТАКТАМИ ---------- */
+  .we-on-map {
+    margin-top: 5vh;
+  }
+  .yandex {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .map {
+    height: 30px;
+  }
+  .footer #to__me {
+    text-align: center;
+    font-size: 1.8vmax;
+    width: 95%;
+  }
+  #to__me {
+    margin-top: 3vh;
+  }
+  .navigation {
+    width: 100%;
+    margin-top: 1vh;
+    /*height: 20vh;*/
+  }
+  .area {
+    font-size: 2.2vmax;
+  }
+  .social-icons {
+    width: 50px;
+    border-radius: 20%;
+  }
+  .footer {
+    height: 110vh;
+  }
+  .developer-footer {
+    height: 4vh;
+  }
+  #back-top {
+    position: fixed;
+    bottom: 0vh;
+    margin-left: -15vw;
+  }
+  #back-top span {
+    width: 58px;
+    height: 58px;
+  }
+  .display_none {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media390.css.map */
